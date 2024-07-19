@@ -36,9 +36,7 @@
       embedded
       arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
     >
-      <a-assets>
-        <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/m-soofiyani/ARImage_Test_BulbStory/main/assets/asset.gltf"></a-asset-item>
-      </a-assets>
+
       <a-nft
         type="nft"
         url="https://raw.githubusercontent.com/m-soofiyani/ARImage_Test_BulbStory/main/assets/BulbStoryImageTrack"
@@ -48,7 +46,7 @@
         smoothThreshold="5"
       >
         <a-entity
-          gltf-model="#animated-asset"
+          gltf-model="assets/asset.gltf"
           scale="5 5 5"
           position="0 0 0"
         ></a-entity>
