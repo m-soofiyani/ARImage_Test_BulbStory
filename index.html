@@ -36,6 +36,9 @@
       embedded
       arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
     >
+      <a-assets>
+        <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/m-soofiyani/ARImage_Test_BulbStory/main/assets/asset.gltf"></a-asset-item>
+      </a-assets>
       <a-nft
         type="nft"
         url="https://raw.githubusercontent.com/m-soofiyani/ARImage_Test_BulbStory/main/assets/BulbStoryImageTrack"
@@ -44,10 +47,11 @@
         smoothTolerance=".01"
         smoothThreshold="5"
       >
-        <a-box position="0 0.5 0" rotation="0 45 0" color="#4CC3D9"></a-box>
-        <a-sphere position="1.25 1.25 -1" radius="0.5" color="#EF2D5E"></a-sphere>
-        <a-cylinder position="0.75 0.75 -2" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-        <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+        <a-entity
+          gltf-model="#animated-asset"
+          scale="5 5 5"
+          position="0 0 0"
+        ></a-entity>
       </a-nft>
       <a-entity camera></a-entity>
     </a-scene>
